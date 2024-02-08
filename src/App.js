@@ -6,9 +6,9 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Posters from "./pages/Posters";
 import Showtimes from "./pages/Showtimes";
-
+import Snacks from "./pages/Snacks";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">
-                About
+              <NavLink to="/Posters" activeClassName="active">
+                Posters
               </NavLink>
             </li>
             <li>
@@ -31,13 +31,19 @@ function App() {
                 Showtimes
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/Snacks" activeClassName="active">
+                Snacks
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/Posters" element={<Posters />} />
           <Route path="/Showtimes" element={<Showtimes />} />
+          <Route path="/Snacks" element={<Snacks />} />
         </Routes>
       </div>
     </Router>
