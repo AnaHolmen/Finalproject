@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Showtimes from "./pages/Showtimes";
+
 
 function App() {
   return (
@@ -26,8 +27,8 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeClassName="active">
-                Contact
+              <NavLink to="/Showtimes" activeClassName="active">
+                Showtimes
               </NavLink>
             </li>
           </ul>
@@ -36,7 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Showtimes" element={<Showtimes />} />
         </Routes>
       </div>
     </Router>

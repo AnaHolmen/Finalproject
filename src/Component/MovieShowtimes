@@ -1,0 +1,28 @@
+import React from "react";
+
+function MovieShowtimes() {
+  const movies = [
+    { title: "Pitch Perfect", showtimes: ["10:00 AM", "1:00 PM", "4:00 PM"] },
+    { title: "Other Women", showtimes: ["11:00 AM", "2:00 PM", "5:00 PM"] },
+    { title: "13 Going on 30", showtimes: ["12:00 PM", "3:00 PM", "6:00 PM"] },
+    { title: "Letter to Juliet", showtimes: ["1:00 PM", "4:00 PM", "7:00 PM"] },
+  ];
+
+  return (
+    <div>
+      <h1>Movie Showtimes</h1>
+      {movies.map((movie, index) => (
+        <div key={index}>
+          <h2>{movie.title}</h2>
+          <ul>
+            {movie.showtimes.map((showtime, i) => (
+              <li key={i}>{showtime}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default MovieShowtimes;
