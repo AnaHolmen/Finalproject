@@ -3,10 +3,10 @@ import React from "react";
 function SnackMenu() {
   // Define your snack data
   const snacks = [
-    { Snack: "Hotdog", price: "$5.00" },
-    { Snack: "Popcorn", price: "$4.00" },
-    { Snack: "Candy", price: "$3.00" },
-    { Snack: "Soda", price: "$2.50" },
+    { Class: "Hotdog", price: "$5.00" },
+    { Class: "Popcorn", price: "$4.00" },
+    { Class: "Candy", price: "$3.00" },
+    { Class: "Soda", price: "$2.50" },
   ];
 
   const snackImageUrl =
@@ -32,7 +32,8 @@ function SnackMenu() {
               key={index}
               className={index % 2 === 0 ? "table-primary" : "table-secondary"}
             >
-              <th scope="row">{snack.class}</th>
+              <th scope="row">{snack.Class}</th>{" "}
+              {/* Change snack.class to snack.Class */}
               <td>{snack.price}</td>
             </tr>
           ))}
