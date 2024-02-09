@@ -1,49 +1,23 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Posters from "./pages/Posters";
-import Showtimes from "./pages/Showtimes";
 import Snacks from "./pages/Snacks";
+import Navigation from "./components/Navigation";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Showtimes from "./pages/Showtimes";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/" activeClassName="active">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/Posters" activeClassName="active">
-                Posters
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/Showtimes" activeClassName="active">
-                Showtimes
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/Snacks" activeClassName="active">
-                Snacks
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Posters" element={<Posters />} />
-          <Route path="/Showtimes" element={<Showtimes />} />
           <Route path="/Snacks" element={<Snacks />} />
+          <Route path="/Showtimes" element={<Showtimes />} />
         </Routes>
       </div>
     </Router>
