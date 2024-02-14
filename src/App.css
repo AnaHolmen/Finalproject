@@ -1,1 +1,74 @@
+body {
+  background-color: aqua;
+  font-family: "Gill Sans";
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
 
+.movie h1 {
+  position: fixed;
+  top: 0;
+  margin-top: 100px;
+}
+
+/* Style for Movie component */
+.movie {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Gill Sans";
+}
+
+.movie p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.img {
+  max-width: 250px;
+  max-height: auto;
+}
+
+span {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.card-body {
+  background-color: bisque; /* Use any shade of gray you prefer */
+}
+
+.card {
+  border: 2px dotted black; /* Set order color and thickness */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  margin-bottom: 20px; /* Add some space between cards */
+}
+
+.table {
+  border-collapse: collapse; /* Collapse borders to avoid double borders between cells */
+  border: 2px dotted black; /* Set order color and thickness */
+}
+
+.table th,
+.table td {
+  border: 1px solid black; /* Add a black border with a thickness of 1px to table cells */
+}
+.navbar {
+  border: 2px dotted gold; /* Add a black border with a thickness of 1px */
+}

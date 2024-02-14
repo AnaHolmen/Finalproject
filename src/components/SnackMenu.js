@@ -32,7 +32,7 @@ function SnackMenu() {
               key={index}
               className={index % 2 === 0 ? "table-primary" : "table-secondary"}
             >
-              <th scope="row">{snack.Class}</th>{" "}
+              <th scope="row">{snack.Class}</th>
               {/* Change snack.class to snack.Class */}
               <td>{snack.price}</td>
             </tr>

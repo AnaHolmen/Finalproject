@@ -13,10 +13,9 @@ function Playing() {
         <div className="card-body">
           <h5 className="card-title">Pitch Perfect</h5>
           <p className="card-text">
-            <p className="card-text">
-              <a href="#">3:00 PM</a>, <a href="#">7:00 PM</a>,{" "}
-              <a href="#">9:00 PM</a>
-            </p>
+            <button>3:00 PM</button>
+            <button>7:00 PM</button>
+            <button>9:00 PM</button>
           </p>
         </div>
       </div>
@@ -30,8 +29,9 @@ function Playing() {
         <div className="card-body">
           <h5 className="card-title">Other Women</h5>
           <p className="card-text">
-            <a href="#">3:00 PM</a>
-            <a href="#">5:00 PM</a>, <a href="#">9:00 PM</a>
+            <button>3:00 PM</button>
+            <button>5:00 PM</button>
+            <button>9:00 PM</button>
           </p>
         </div>
       </div>
@@ -45,8 +45,9 @@ function Playing() {
         <div className="card-body">
           <h5 className="card-title">13 Going on 30</h5>
           <p className="card-text">
-            <a href="#">2:30 PM</a>, <a href="#">6:30 PM</a>,{" "}
-            <a href="#">9:00 PM</a>
+            <button>2:30 PM</button>
+            <button>6:30 PM</button>
+            <button>9:00 PM</button>
           </p>
         </div>
       </div>
@@ -60,8 +61,9 @@ function Playing() {
         <div className="card-body">
           <h5 className="card-title">Letters to Juliet</h5>
           <p className="card-text">
-            <a href="#">1:00 PM,</a> <a href="#">4:00 PM</a>,{" "}
-            <a href="#">8:00 PM</a>
+            <button>1:00 PM</button>
+            <button>4:00 PM</button>
+            <button>8:00 PM</button>
           </p>
         </div>
       </div>
