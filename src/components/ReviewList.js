@@ -1,7 +1,7 @@
 import React from "react";
 
 const ReviewList = ({ reviews, id }) => (
-  <div key="{id}-review">
+  <div key={`${id}-review`}>
     <h3>Reviews</h3>
     {reviews.map((review, index) => (
       <div key={index}>

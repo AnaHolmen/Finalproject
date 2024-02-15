@@ -1,7 +1,7 @@
 import React from "react";
 
 function SnackMenu() {
-  // Define your snack data
+  // Define  snack data
   const snacks = [
     { Class: "Hotdog", price: "$5.00" },
     { Class: "Popcorn", price: "$4.00" },
@@ -20,6 +20,8 @@ function SnackMenu() {
         style={{ maxWidth: "100%", maxHeight: "200px" }}
       />
       <table className="table">
+        {" "}
+        {/* Table for displaying snack menu */}
         <thead>
           <tr>
             <th scope="col">Class</th>
@@ -33,7 +35,7 @@ function SnackMenu() {
               className={index % 2 === 0 ? "table-primary" : "table-secondary"}
             >
               <th scope="row">{snack.Class}</th>
-              {/* Change snack.class to snack.Class */}
+
               <td>{snack.price}</td>
             </tr>
           ))}

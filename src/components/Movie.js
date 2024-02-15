@@ -1,36 +1,31 @@
 import React, { useState } from "react";
-import ReviewList from "./ReviewList";
-import ReviewsForm from "./ReviewForm";
+import ReviewsForm from "./ReviewForm"; // Importing the ReviewsForm component
 
 const Movie = ({ movie }) => {
-  const [reviews, setReviews] = useState([]);
+  // Setting up state for movie rating
   const [movieRating, setMovieRating] = useState(movie.rating);
 
-  const addReview = (review) => {
-    setReviews([...reviews, review]);
-  };
-
+  // Destructuring movie object to get specific properties
   const { image, title, about } = movie;
 
-  // eslint-disable-next-line no-unused-vars
-  const someFunctionThatUsesSetMovieRatingAndSetId = () => {
-    // You can use setMovieRating and setId here to avoid eslint warnings
+  const handleSetRating = () => {
     setMovieRating(5);
-    // setId(123); // Removed because id is not used
   };
 
   return (
     <div>
+      {/* Displaying the movie title and movie image*/}
       <h2>{title}</h2>
-      <img src={image} className="img" alt={`${title} Movie Poster`} />
-      <p>{about}</p>
-      {/* Display the movie rating */}
-      <p>Movie Rating: {movieRating}</p>
 
-      <ReviewList reviews={reviews} />
-      <ReviewsForm addReview={addReview} movieTitle={title} />
+      <img src={image} className="img" alt={`${title} Movie Poster`} />
+
+      <ReviewsForm movieTitle={title} />
+
+      <p>{about}</p>
+
+      <p>Movie Rating: {movieRating}</p>
     </div>
   );
 };
 
-export default Movie;
+export default Movie; // Exporting the Movie component

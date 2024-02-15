@@ -43,32 +43,27 @@ body {
   max-width: 250px;
   max-height: auto;
 }
-
-span {
-  cursor: pointer;
-  font-size: 20px;
-  margin-right: 5px;
-}
-
+/* Style for showtimes component */
 .card-body {
-  background-color: bisque; /* Use any shade of gray you prefer */
+  background-color: bisque;
 }
 
 .card {
-  border: 2px dotted black; /* Set order color and thickness */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  margin-bottom: 20px; /* Add some space between cards */
+  border: 2px dotted black;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
-
+/* Style for snack component */
 .table {
-  border-collapse: collapse; /* Collapse borders to avoid double borders between cells */
-  border: 2px dotted black; /* Set order color and thickness */
+  border-collapse: collapse;
+  border: 2px dotted black;
 }
 
 .table th,
 .table td {
-  border: 1px solid black; /* Add a black border with a thickness of 1px to table cells */
+  border: 1px solid black;
 }
+/* Style for nav bar component */
 .navbar {
-  border: 2px dotted gold; /* Add a black border with a thickness of 1px */
+  border: 2px dotted gold;
 }
