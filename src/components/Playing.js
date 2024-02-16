@@ -14,7 +14,7 @@ function Playing() {
         <div className="card-body">
           <h5 className="card-title">Pitch Perfect</h5>
           <p className="card-text">
-            <button>3:00 PM</button> /{/* Showtime buttons */}
+            <button>3:00 PM</button> {/* Showtime buttons */}
             <button>7:00 PM</button>
             <button>9:00 PM</button>
           </p>

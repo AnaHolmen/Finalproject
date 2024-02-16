@@ -4,8 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  //Defining the Navigation component
   return (
     <Navbar bg="dark" variant="dark">
+      {" "}
+      {/* Nav bar with background dark, using class to align navi tem and creating a linkl to home route */}
       <Container>
         <Nav className="me-auto">
           <Link to="/" className="nav-link">

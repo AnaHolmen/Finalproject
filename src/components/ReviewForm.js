@@ -2,20 +2,29 @@ import React, { useState } from "react";
 import { week12API } from "../rest/week16Api";
 
 const ReviewForm = ({ addReview, movieTitle }) => {
-  console.log(week12API);
-
   const [reviewText, setReviewText] = useState("");
 
+  // Define handleChange function
   const handleChange = (event) => {
     setReviewText(event.target.value);
   };
 
+  // Define handleSubmit function
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      addReview({ movieTitle, reviewText });
+      if (typeof addReview === "function") {
+        // Call the API to add the review
+        const response = await week12API.post({ movieTitle, reviewText });
 
-      setReviewText("");
+        // Update the state with the new review
+        addReview(response);
+
+        // Clear the review text after submission
+        setReviewText("");
+      } else {
+        console.error("addReview is not a function");
+      }
     } catch (error) {
       console.error("Error adding review:", error);
     }
@@ -32,7 +41,7 @@ const ReviewForm = ({ addReview, movieTitle }) => {
           rows="3"
           placeholder={`Leave a review for ${movieTitle}...`}
           value={reviewText}
-          onChange={handleChange}
+          onChange={handleChange} // Use the handleChange function here
         />
         <br />
         <button type="submit">Submit Review</button>
