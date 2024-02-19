@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReviewForm from "./ReviewForm";
+import ReviewList from "./ReviewList"; // Import the ReviewList component
 
 const Movie = ({ movie }) => {
   // State to hold the reviews
@@ -26,9 +27,8 @@ const Movie = ({ movie }) => {
         updateReviews={updateReviews}
       />
 
-      {/* Pass the reviews array to the ReviewList component */}
-      {/* Assuming ReviewList component is implemented and takes reviews as prop */}
-      {/* <ReviewList reviews={reviews} id={id} /> */}
+      {/* Render the ReviewList component and pass reviews as prop */}
+      <ReviewList reviews={reviews} />
 
       <p>{about}</p>
     </div>
