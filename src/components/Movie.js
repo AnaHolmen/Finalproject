@@ -1,24 +1,36 @@
 import React, { useState } from "react";
-import ReviewForm from "./ReviewForm"; // Updated import
+import ReviewForm from "./ReviewForm";
 
 const Movie = ({ movie }) => {
-  // Setting up state for movie rating
-  const [movieRating, setMovieRating] = useState(movie.rating);
+  // State to hold the reviews
+  const [reviews, setReviews] = useState([]);
 
-  const { image, title, about } = movie;
-
-  const handleSetRating = () => {
-    setMovieRating(5);
+  // Function to update the reviews state
+  const updateReviews = (newReviews) => {
+    setReviews(newReviews);
   };
+
+  // Destructure movie object to get specific properties
+  const { id, image, title, about } = movie;
 
   return (
     <div>
       {/* Displaying the movie title and movie image*/}
       <h2>{title}</h2>
       <img src={image} className="img" alt={`${title} Movie Poster`} />
-      <ReviewForm movieTitle={title} /> {/* Updated component name */}
+
+      {/* Render the ReviewForm component and pass necessary props */}
+      <ReviewForm
+        movieId={id}
+        reviews={reviews}
+        updateReviews={updateReviews}
+      />
+
+      {/* Pass the reviews array to the ReviewList component */}
+      {/* Assuming ReviewList component is implemented and takes reviews as prop */}
+      {/* <ReviewList reviews={reviews} id={id} /> */}
+
       <p>{about}</p>
-      <p>Movie Rating: {movieRating}</p>
     </div>
   );
 };

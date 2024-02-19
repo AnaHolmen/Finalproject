@@ -1,7 +1,6 @@
 const WEEK16_API_ENDPOINT =
   "https://659c8892633f9aee7907b1bf.mockapi.io/week16";
 
-// Define the Week12API class
 class Week12API {
   // Define the get method to fetch data from the API
   get = async () => {

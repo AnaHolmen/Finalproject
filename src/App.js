@@ -16,6 +16,7 @@ function App() {
   useEffect(() => {
     // Example of using week12API to fetch data
     const fetchData = async () => {
+      
       try {
         const data = await week12API.get();
         setReviews(data); // Assuming data is an array of reviews
