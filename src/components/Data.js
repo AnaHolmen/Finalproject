@@ -1,7 +1,7 @@
 let moviesArray = [
   {
     //data for movie posters and showtimes
-    id: "1",
+    movieId: "1",
     image:
       "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9276475_p_v8_ax.jpg",
     title: "Pitch Perfect ",
@@ -12,7 +12,7 @@ let moviesArray = [
     length: "1h 52min",
   },
   {
-    id: "2",
+    movieId: "2",
     image:
       "https://m.media-amazon.com/images/I/41vHMbOACzL._AC_UF894,1000_QL80_.jpg",
     title: "Other Women",
@@ -23,17 +23,16 @@ let moviesArray = [
     length: "1h 49min",
   },
   {
-    id: "3",
+    movieId: "3",
     image: "https://m.media-amazon.com/images/I/51SyFdBGprL.jpg",
     title: "13 Going on 30",
     about:
       "Unpopular schoolgirl Jenna Rink makes an unusual wish on her birthday. Miraculously, her wish comes true and the 13-year-old Jenna wakes up the next day as a 30-year-old woman.",
     rating: "PG-13",
     length: "1h 38in",
-    stars: 3,
   },
   {
-    id: "4",
+    movieId: "4",
     image:
       "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7886534_p_v12_ai.jpg",
     title: "Letter to Juilet",
@@ -41,7 +40,6 @@ let moviesArray = [
       "Sophie dreams of becoming a writer and travels to Verona, Italy where she meets the Secretaries of Juliet.",
     rating: "PG",
     length: "1h 45in",
-    stars: 4,
   },
 ];
 
