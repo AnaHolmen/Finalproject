@@ -1,6 +1,7 @@
 import React from "react";
 import Playing from "../components/Playing";
 
+//Showtimes component displays movie showtimes
 function Showtimes() {
   return (
     <div

@@ -3,7 +3,7 @@ import React from "react";
 function Playing() {
   // Define the onClick handler for the buttons
   const handleButtonClick = (movieTitle, time) => {
-    // For now, let's just log the selected movie title and time to the console
+    //  log the selected movie title and time to the console
     console.log("Selected movie:", movieTitle);
     console.log("Selected time:", time);
   };
