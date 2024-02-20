@@ -53,17 +53,26 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-/* Style for snack component */
+
+/* Style for nav bar  */
+.navbar {
+  border: 2px dotted gold;
+}
+
+.container {
+  width: 80%; /* Set the width to 80% of the viewport */
+  margin: auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
 .table {
+  width: 100%; /* Set the width to 100% of the container */
+  max-width: 1000px; /* Set a maximum width of 1000px */
   border-collapse: collapse;
-  border: 2px dotted black;
+  border: 3px dotted black;
 }
 
 .table th,
 .table td {
-  border: 1px solid black;
-}
-/* Style for nav bar  */
-.navbar {
-  border: 2px dotted gold;
+  border: 2px solid black;
 }

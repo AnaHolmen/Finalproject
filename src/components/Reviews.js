@@ -21,7 +21,7 @@ const Review = ({ movieTitle }) => {
     <div>
       <h1>{movieTitle} Reviews</h1>
       {reviews.map((review) => (
-        <div key={review.id}>
+        <div key={review.movieId}>
           <p>{review.reviewText}</p>
         </div>
       ))}

@@ -11,7 +11,6 @@ const Movie = ({ movie }) => {
     setReviews(newReviews);
   };
 
-  // Destructure movie object to get specific properties
   const { id, image, title, about } = movie;
 
   return (

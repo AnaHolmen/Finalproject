@@ -7,19 +7,16 @@ import Navigation from "./components/Navigation";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Showtimes from "./pages/Showtimes";
 import { week12API } from "./rest/week16Api";
-
 import "./App.css";
 
 function App() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    // Example of using week12API to fetch data
     const fetchData = async () => {
-      
       try {
         const data = await week12API.get();
-        setReviews(data); // Assuming data is an array of reviews
+        setReviews(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -36,7 +33,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Posters" element={<Posters />} />
           <Route path="/Snacks" element={<Snacks />} />
-          <Route path="/Showtimes" element={<Showtimes />} />
+          {/* Pass the reviews data as a prop to the Showtimes component */}
+          <Route path="/Showtimes" element={<Showtimes reviews={reviews} />} />
         </Routes>
       </div>
     </Router>

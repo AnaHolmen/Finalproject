@@ -1,7 +1,7 @@
 import React from "react";
 
-const ReviewList = ({ reviews, id }) => (
-  <div key={`${id}-review`}>
+const ReviewList = ({ reviews, movieId }) => (
+  <div key={`${movieId}-review`}>
     <h3>Reviews</h3>
     {reviews &&
       reviews.length > 0 &&

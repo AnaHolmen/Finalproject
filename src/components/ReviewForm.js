@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { week12API } from "../rest/week16Api";
 
-const ReviewForm = ({ movieId, updateReviews }) => {
+const ReviewForm = ({ updateReviews }) => {
   const [reviewText, setReviewText] = useState("");
 
   const handleChange = (event) => {
@@ -13,7 +13,6 @@ const ReviewForm = ({ movieId, updateReviews }) => {
       const response = await week12API.post(newReview);
       console.log("Review added successfully:", response);
 
-      // Assuming the response contains the newly created review object
       const newReviewObject = response;
 
       // Update the reviews state with the new review
@@ -30,7 +29,6 @@ const ReviewForm = ({ movieId, updateReviews }) => {
     event.preventDefault(); // Prevent the default form submission behavior
     try {
       let newReview = {
-        movieId: movieId,
         reviewText: reviewText,
       };
       await addReview(newReview);
