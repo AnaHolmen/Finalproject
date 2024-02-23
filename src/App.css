@@ -60,14 +60,14 @@ body {
 }
 
 .container {
-  width: 80%; /* Set the width to 80% of the viewport */
-  margin: auto; /* Center the container horizontally */
+  width: 80%;
+  margin: auto;
   padding: 20px;
 }
 
 .table {
-  width: 100%; /* Set the width to 100% of the container */
-  max-width: 1000px; /* Set a maximum width of 1000px */
+  width: 100%;
+  max-width: 1000px;
   border-collapse: collapse;
   border: 3px dotted black;
 }

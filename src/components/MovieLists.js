@@ -2,14 +2,11 @@ import React from "react";
 import Movie from "./Movie";
 import { moviesArray } from "./Data";
 
-// MovieList compoent redners a list of movies and Log the moviesArray to the console
-function MovieLists() {
-  console.log(moviesArray);
-
+function MovieLists({ reviews }) {
   return (
     <div>
-      {moviesArray.map((movie) => (
-        <Movie movie={movie} key={movie.id} />
+      {moviesArray.map((movie, index) => (
+        <Movie movie={movie} key={index} reviews={reviews} />
       ))}
     </div>
   );
